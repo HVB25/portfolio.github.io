@@ -1,93 +1,156 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: verdana;
+    /* Universal selector ro remove default margin n padding from body */
+}
+html {
+    scroll-behavior: smooth;
+    /* for smooth scrolling */
 }
 .header {
-    position: relative;
+    background-color: red;
     width: 100%;
-    height: 100vh;
-    background: #eff4fd;
+    min-height: 60vh;
 }
-nav {
-    display: flex;
-    width: 84%;
+.container {
+    padding: 0 10px 0 10px;
+    max-width: 80%;
     margin: auto;
-    padding: 20px 0;
+}
+.navigate {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
+    padding-top: 5px;
+}
+.logo {
+    border-radius: 50%;
+}
+.nav-left {
+    width: 40%;
+}
+.nav-right {
+    width: 60%;
+    display: flex;
+    justify-content: end;
+}
+.link {
+    padding-left: 20px;
+    text-decoration: none;
+    color: white;
+}
+.about-me {
+    min-height: 40vh;
+    /* background-color: orange; */
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.about-left {
+    width: 90%;
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.name {
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: bold;
+}
+.summary {
+    font-size: 20px;
+}
+.about-right {
+    /* background-color: aqua; */
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+.details {
+    display: flex;
+    padding-top: 20px;
+    padding-left: 30px;
+    /* background-color: paleturquoise; */
+}
+.details-left {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+.details.right {
+    width: 20%;
+}
+.self-img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+.resume {
+    padding: 10px;
+    border: 1px solid #000;
+    width: 20%;
+    text-align: center;
+    box-shadow: 5px 5px grey;
+    background-color: yellow;
+}
+.resume:hover {
+    background-color: orange;
+    cursor: pointer;
+}
+.resume:active {
+    background-color: teal;
+    /* transform: scale(0.9); */
+    box-shadow: none;
+}
+.about-detail {
+    font-size: 80px;
+    font-weight: bold;
+}
+.about-details {
+    padding-top: 20px;
+    font-size: 30px;
+}
+.project {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 80vh;
+}
+.project-name {
+    font-size: 80px;
+    font-weight: bold;
+    padding-left: 400px;
+}
+.project-list {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
 }
-.logo img {
-    width: 100px;
-    height: 100px;
+.project-link {
+    width: 330px;
+    min-height: 350px;
+    border: 2px solid ;
+    /* background-color: yellow; */
+    border-radius: 10px;
+    box-shadow: 5px  10px grey;
+    display: flex;
+    flex-direction: column;
 }
-nav ul li {
-    display: inline-block;
-    list-style: none;
-    margin: 10px 20px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #000;
-    font-weight: bold;
-}
-
-nav ul li a:hover {
-    color: red;
-}
-
-.detail {
-    margin-left: 8%;
-    margin-top: 13%;
-}
-
-.detail h1 {
-    font-size: 50px;
-    color: #212121;
-    margin-bottom: 20px;
-}
-
-span {
-    color: orange;
-}
-.detail p {
-    color: #555;
-    line-height: 22px;
-}
-.detail a {
-    background: #212121;
-    padding: 10px 18px;
-    text-decoration: none;
-    font-weight: bold;
-    color: #fff;
-    display: inline-block;
-    margin: 30px 0;
-    border-radius: 5px;
-}
-.images {
-    width: 45%;
-    height: 80%;
-    position: absolute;
-    bottom: 0;
-    right: 100px;
-}
-.images img {
-    height: 100%;
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    transform: translate(-50%);
-    transition: bottom 1s left 1s;
-}
-.images .shape {
+.card-img {
     width: 100%;
-    height: 100%;
+    height: 200px;
 }
-
-.images:hover .shape {
-    bottom: 40px;
+.card-name{
+    text-indent: 125px;
+    padding: 10px 0 10px 0;
+    font-size: 20px;
+    font-weight: bold;
 }
-.images:hover .self {
-    left:45%;
+.card-text {
+    padding: 10px 0 10px 0;
 }
